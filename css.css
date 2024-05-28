@@ -1,0 +1,284 @@
+body {
+  font-family: 'seravek Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  overflow-y:scroll;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  padding: 80px 20px 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+/* Grid container */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Individual product cards */
+.product {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(53, 75, 147, 0.264);
+}
+
+/* Product image */
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Product title */
+.product h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #000000;
+  font-family: seravek, medium;
+}
+
+/* Product description */
+.product .description {
+  font-size: 1em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Product price */
+.product .price {
+  font-weight: bold;
+  font-family: seravek, regular;
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart button */
+.product-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.product-button:hover {
+  background-color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .product {
+    width: 100%;
+  }
+}
+
+#contact-form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #000000, #030303);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: playfair display bold;
+}
+
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 150px; /* Increase the height of the message box */
+  font-family: playfair display;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #353d7a;
+  box-shadow: 0 0 8px rgba(51, 51, 51, 0.1);
+  background-color: #fff;
+}
+
+#contact-form button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0078e2;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: playfair display;
+}
+
+#contact-form button:hover {
+  background-color: #1900ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  font-family: playfair display;
+
+}
+
+footer p {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.h2{
+  font-weight: bold;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+}
+
+.text-container {
+  text-align:justify;
+  font-family: seravek, regular;
+  line-height: 1.5;
+  padding: 10px 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight:lighter;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scaled-image {
+  max-width: 50%;
+  height: auto; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: calc(100% - 40px);
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
